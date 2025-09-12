@@ -1,0 +1,36 @@
+/* [project]/src/components/ui/avatar/avatar.module.css [app-client] (css) */
+.avatar-module__t4WWlq__avatar-upload-container {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.avatar-module__t4WWlq__avatar-image {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  transition: transform .3s;
+}
+
+.avatar-module__t4WWlq__avatar-upload-container:hover .avatar-module__t4WWlq__avatar-image {
+  opacity: .8;
+  transform: scale(1.05);
+}
+
+.avatar-module__t4WWlq__avatar-overlay {
+  color: #fff;
+  text-align: center;
+  pointer-events: none;
+  background: rgba(0, 0, 0, .5);
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  width: 100%;
+  height: 30%;
+  font-size: .9rem;
+  line-height: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=src_components_ui_avatar_avatar_module_css_bad6b30c._.single.css.map*/

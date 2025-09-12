@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jcaml/OneDrive/Documents/Vision%20Bam/vision_bam_2025/src/app/auth/registro/estilo.module.css"],"sourcesContent":[".container {\r\n    width: 100%;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}"],"names":[],"mappings":"AAAA","debugId":null}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jcaml/OneDrive/Documents/Vision%20Bam/vision_bam_2025/src/components/usuario/registro.module.css"],"sourcesContent":[".titulo {\r\n    grid-column: 1/-1;\r\n}"],"names":[],"mappings":"AAAA","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/jcaml/OneDrive/Documents/Vision%20Bam/vision_bam_2025/src/components/ui/card/card.module.css"],"sourcesContent":[".card {\r\n    border-radius: 1rem;\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\r\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\r\n    background-color: orange;\r\n}"],"names":[],"mappings":"AAAA","debugId":null}}]
+}

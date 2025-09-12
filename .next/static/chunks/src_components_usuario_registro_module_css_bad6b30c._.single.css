@@ -1,0 +1,28 @@
+/* [project]/src/components/usuario/registro.module.css [app-client] (css) */
+.registro-module__o2mDYW__titulo {
+  grid-column: 1 / -1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.registro-module__o2mDYW__titulo_h2 {
+  grid-column: 1 / -1;
+}
+
+.registro-module__o2mDYW__card {
+  width: 90%;
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.registro-module__o2mDYW__container_img {
+  grid-column: 1 / -1;
+  justify-content: center;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_components_usuario_registro_module_css_bad6b30c._.single.css.map*/
