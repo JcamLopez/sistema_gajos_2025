@@ -1,0 +1,72 @@
+/* [project]/src/app/auth/registro2/style.module.css [app-client] (css) */
+.style-module__eeFjnG__container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* [project]/src/components/ui/card/card.module.css [app-client] (css) */
+.card-module__m4sYZa__card {
+  border-radius: 1rem;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  container: card / inline-size;
+}
+
+/* [project]/src/components/ui/input/input.module.css [app-client] (css) */
+.input-module__g1Ti0W__formGroup {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.input-module__g1Ti0W__formGroup label {
+  font-weight: 600;
+}
+
+.input-module__g1Ti0W__formGroup input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+/* [project]/src/components/user/user.module.css [app-client] (css) */
+.user-module__l8JgOW__card {
+  width: 100%;
+  height: auto;
+}
+
+.user-module__l8JgOW__formGrid {
+  gap: 1rem;
+  display: grid;
+}
+
+@container card (width <= 500px) {
+  .user-module__l8JgOW__formGrid {
+    background-color: #0ff;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@container card (width >= 501px) and (width <= 700px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container card (width >= 701px) and (width <= 900px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container card (width >= 901px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.user-module__l8JgOW__formGrid h1 {
+  grid-column: 1 / -1;
+}
+
+/*# sourceMappingURL=src_0ee7c563._.css.map*/

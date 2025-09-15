@@ -1,0 +1,41 @@
+/* [project]/src/components/user/user.module.css [app-client] (css) */
+.user-module__l8JgOW__card {
+  width: 100%;
+  height: auto;
+}
+
+.user-module__l8JgOW__formGrid {
+  gap: 1rem;
+  display: grid;
+}
+
+@container card (width <= 500px) {
+  .user-module__l8JgOW__formGrid {
+    background-color: #0ff;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@container card (width >= 501px) and (width <= 700px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container card (width >= 701px) and (width <= 900px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container card (width >= 901px) {
+  .user-module__l8JgOW__formGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.user-module__l8JgOW__formGrid h1 {
+  grid-column: 1 / -1;
+}
+
+/*# sourceMappingURL=src_components_user_user_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/login/login.module.css"],"sourcesContent":[".login{\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}"],"names":[],"mappings":"AAAA"}}]
+}

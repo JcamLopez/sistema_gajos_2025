@@ -3,6 +3,7 @@
   border-radius: 1rem;
   transition: transform .2s, box-shadow .2s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  container: card / inline-size;
 }
 
 /*# sourceMappingURL=src_components_ui_card_card_module_css_bad6b30c._.single.css.map*/

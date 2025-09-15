@@ -32,6 +32,30 @@
   display: flex;
 }
 
+@container card (width <= 500px) {
+  .registro-module__o2mDYW__formGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@container card (width >= 501px) and (width <= 700px) {
+  .registro-module__o2mDYW__formGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@container card (width >= 701px) and (width <= 900px) {
+  .registro-module__o2mDYW__formGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@container card (width >= 901px) {
+  .registro-module__o2mDYW__formGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 /* [project]/src/components/ui/input/input.module.css [app-client] (css) */
 .input-module__g1Ti0W__formGroup {
   flex-direction: column;
@@ -54,6 +78,7 @@
   border-radius: 1rem;
   transition: transform .2s, box-shadow .2s;
   box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  container: card / inline-size;
 }
 
 /* [project]/src/components/ui/select/selector.module.css [app-client] (css) */

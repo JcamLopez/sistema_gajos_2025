@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/components/user/user.module.css"],"sourcesContent":[".card{\r\n    width: 100%;\r\n    height: auto;\r\n}\r\n.formGrid {\r\n    display: grid;\r\n    gap: 1rem;\r\n}\r\n\r\n/* Teléfono pequeño: 1 columna, 1 fila */\r\n@container card (max-width: 500px) {\r\n    .formGrid {\r\n        grid-template-columns: repeat(1, 1fr);\r\n        background-color: aqua;\r\n    }\r\n}\r\n\r\n/* Teléfono grande / phablet */\r\n@container card (min-width: 501px) and (max-width: 700px) {\r\n    .formGrid {\r\n        grid-template-columns: repeat(2, 1fr);\r\n    }\r\n}\r\n\r\n/* Tablet vertical */\r\n@container card (min-width: 701px) and (max-width: 900px) {\r\n    .formGrid {\r\n        grid-template-columns: repeat(3, 1fr);\r\n    }\r\n}\r\n\r\n/* Laptop / escritorio */\r\n@container card (min-width: 901px) {\r\n    .formGrid {\r\n        grid-template-columns: repeat(4, 1fr);\r\n    }\r\n}\r\n\r\n.formGrid h1 {\r\n    grid-column: 1/-1;\r\n}"],"names":[],"mappings":"AAAA;;;;;AAIA;;;;;AAMA;EACI;;;;;;AAOJ;EACI;;;;;AAMJ;EACI;;;;;AAMJ;EACI;;;;;AAKJ"}}]
+}

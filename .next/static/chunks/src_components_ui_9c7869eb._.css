@@ -1,0 +1,26 @@
+/* [project]/src/components/ui/card/card.module.css [app-client] (css) */
+.card-module__m4sYZa__card {
+  border-radius: 1rem;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  container: card / inline-size;
+}
+
+/* [project]/src/components/ui/input/input.module.css [app-client] (css) */
+.input-module__g1Ti0W__formGroup {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.input-module__g1Ti0W__formGroup label {
+  font-weight: 600;
+}
+
+.input-module__g1Ti0W__formGroup input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+/*# sourceMappingURL=src_components_ui_9c7869eb._.css.map*/
