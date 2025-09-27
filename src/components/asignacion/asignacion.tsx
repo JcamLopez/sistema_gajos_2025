@@ -10,21 +10,18 @@ import { useForm } from 'react-hook-form';
 import { trabajadorSchema, trabajadorPayLoad } from '@/schemas/trabajadorSchema'
 import { zodResolver } from "@hookform/resolvers/zod";
 
+
 export default function Asignacion() {
   const [trabajador, setTrabajador] = useState<SelectOption[]>([]);
   useEffect(() => {
 
     obtenerTrabajador().then((dato) => {
-      console.log("xxxxxxxxxxxxxxxxxxxxxx")
-      console.log(dato)
       const opciones = dato.map((data) => ({
         label: data.N1,
         value: data.N1,
       }));
-      console.log("ffffffffffffffffffffff")
-      console.log(opciones)
       setTrabajador(opciones)
-    });
+    }); 
 
 
   }, [])
@@ -41,16 +38,24 @@ export default function Asignacion() {
 
 
   return (
-    <div>
-      <Select
-        label="Departamento"
-        name="departamento"
+    <Card className={Stile.Card}>
+      <Select className={Stile.select_trabajador}
+        label="TRABAJADOR"
+        name="trabajador"
         options={trabajador}
-        register={register('n1')}
+        register={register('trabajador')}
+      />
+
+
+        <Select
+        label="VEHICULO"
+        name="vehiculo"
+        options={trabajador}
+        register={register('vehiculo')}
 
 
 
       />
-    </div>
+    </Card>
   )
 }

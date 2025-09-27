@@ -1,4 +1,10 @@
 (globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/components/asignacion/asignacion.module.css [app-client] (css module)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({
+  "div": "asignacion-module__R0C8Fa__div",
+});
+}),
 "[project]/src/components/ui/select/selector.module.css [app-client] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
@@ -83,35 +89,6 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/src/services/frontend/trabajadorServices.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
-
-__turbopack_context__.s([
-    "obtenerTrabajador",
-    ()=>obtenerTrabajador
-]);
-async function obtenerTrabajador() {
-    try {
-        const response = await fetch('/api/consultarTrabajador', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-        if (!response.ok) {
-            throw new Error('Error al consultar el departamento');
-        }
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error('Error en TrabajadorServices:', error);
-        return [];
-    }
-}
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
-}
-}),
 "[project]/src/schemas/trabajadorSchema.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -149,9 +126,9 @@ __turbopack_context__.s([
     ()=>Asignacion
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$asignacion$2f$asignacion$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__ = __turbopack_context__.i("[project]/src/components/asignacion/asignacion.module.css [app-client] (css module)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2f$selector$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/ui/select/selector.tsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$frontend$2f$trabajadorServices$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/services/frontend/trabajadorServices.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react-hook-form/dist/index.esm.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$trabajadorSchema$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/schemas/trabajadorSchema.ts [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@hookform/resolvers/zod/dist/zod.mjs [app-client] (ecmascript)");
@@ -169,29 +146,26 @@ function Asignacion() {
     const [trabajador, setTrabajador] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Asignacion.useEffect": ()=>{
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$frontend$2f$trabajadorServices$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["obtenerTrabajador"])().then({
-                "Asignacion.useEffect": (dato)=>{
-                    console.log("xxxxxxxxxxxxxxxxxxxxxx");
-                    console.log(dato);
-                    const opciones = dato.map({
-                        "Asignacion.useEffect.opciones": (data)=>({
-                                label: data.N1,
-                                value: data.N1
-                            })
-                    }["Asignacion.useEffect.opciones"]);
-                    console.log("ffffffffffffffffffffff");
-                    console.log(opciones);
-                    setTrabajador(opciones);
-                }
-            }["Asignacion.useEffect"]);
-        }
+            console.log("entroooo");
+        /*     obtenerTrabajador().then((dato) => {
+      console.log("xxxxxxxxxxxxxxxxxxxxxx")
+      console.log(dato)
+      const opciones = dato.map((data) => ({
+        label: data.N1,
+        value: data.N1,
+      }));
+      console.log("ffffffffffffffffffffff")
+      console.log(opciones)
+      setTrabajador(opciones)
+    }); */ }
     }["Asignacion.useEffect"], []);
     const { register, handleSubmit, formState: { errors, isSubmitting } } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hook$2d$form$2f$dist$2f$index$2e$esm$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useForm"])({
         resolver: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$hookform$2f$resolvers$2f$zod$2f$dist$2f$zod$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["zodResolver"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$trabajadorSchema$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["trabajadorSchema"])
     });
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$asignacion$2f$asignacion$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].div,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$select$2f$selector$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-            label: "Departamento",
+            label: "TRABAJADOR",
             name: "departamento",
             options: trabajador,
             register: register('n1')
@@ -220,4 +194,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=src_fe04fdef._.js.map
+//# sourceMappingURL=src_526786e6._.js.map

@@ -10,6 +10,7 @@ function Selector({
     name,
     options,
     onChange,
+    className,
     placeholder = 'Seleccione una opción',
     register,
     error,

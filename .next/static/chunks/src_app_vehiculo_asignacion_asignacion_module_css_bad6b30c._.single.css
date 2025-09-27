@@ -1,4 +1,11 @@
 /* [project]/src/app/vehiculo/asignacion/asignacion.module.css [app-client] (css) */
-
+.asignacion-module__JszZwq__contenedor {
+  background-color: #f6f9f6;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+}
 
 /*# sourceMappingURL=src_app_vehiculo_asignacion_asignacion_module_css_bad6b30c._.single.css.map*/

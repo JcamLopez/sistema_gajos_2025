@@ -6,7 +6,10 @@ export const trabajadorSchema = z.object({
     n1: z.string().min(1, {message: "El primer nombre es obligatorio"}),
     n2: z.string().optional(),
     a1: z.string().min(1, {message: "El primer apellido es obligatorio"}),
-    a2: z.string().min(1, {message: "El segundo apellido es obligatorio"})
+    a2: z.string().min(1, {message: "El segundo apellido es obligatorio"}),
+        trabajador: z.string().min(1, {message: "El documento es obligatorio"}),
+   
+    vehiculo: z.string().min(1, {message: "El primer nombre es obligatorio"}),
 })
 
 export type trabajadorPayLoad = z.infer<typeof trabajadorSchema>;

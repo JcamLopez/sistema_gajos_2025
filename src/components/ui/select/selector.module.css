@@ -6,11 +6,15 @@
 
 .formGroup label {
   font-weight: 600;
+  margin-top: 20px;
 }
 
 .formGroup select {
   padding: 0.7rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+ 
+  background-color: white;
+  color: black;
 }
 

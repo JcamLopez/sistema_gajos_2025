@@ -49,6 +49,7 @@ __turbopack_context__.n(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$c
 "[project]/src/app/vehiculo/asignacion/asignacion.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "contenedor": "asignacion-module__JszZwq__contenedor",
 });
 }),
 "[project]/src/app/vehiculo/asignacion/page.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {

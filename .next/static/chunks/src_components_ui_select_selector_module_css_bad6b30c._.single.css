@@ -6,10 +6,13 @@
 }
 
 .selector-module__bpJDkG__formGroup label {
+  margin-top: 20px;
   font-weight: 600;
 }
 
 .selector-module__bpJDkG__formGroup select {
+  color: #000;
+  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: .7rem;
