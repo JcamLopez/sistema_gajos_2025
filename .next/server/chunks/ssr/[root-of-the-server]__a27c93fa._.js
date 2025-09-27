@@ -143,46 +143,64 @@ function Usuario() {
             className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$user$2f$user$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].formGrid,
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    children: "esta es mi Card"
+                    children: "resgistro"
                 }, void 0, false, {
                     fileName: "[project]/src/components/user/usuario.tsx",
                     lineNumber: 9,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    label: "primer nombre",
+                    label: "Primer nombre",
                     name: "n1",
-                    placeholder: "primer nombre"
+                    placeholder: "Primer nombre"
                 }, void 0, false, {
                     fileName: "[project]/src/components/user/usuario.tsx",
                     lineNumber: 10,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    label: "segundo nombre",
+                    label: "Segundo nombre",
                     name: "n2",
-                    placeholder: "segundo nombre"
+                    placeholder: "Segundo nombre"
                 }, void 0, false, {
                     fileName: "[project]/src/components/user/usuario.tsx",
                     lineNumber: 11,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    label: "tipo documento",
-                    name: "n3",
-                    placeholder: ""
+                    label: "Primer apellido",
+                    name: "ap1",
+                    placeholder: "Primer apellido"
                 }, void 0, false, {
                     fileName: "[project]/src/components/user/usuario.tsx",
                     lineNumber: 12,
                     columnNumber: 6
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                    label: "segundo nombre",
-                    name: "n1",
-                    placeholder: "segundo nombre"
+                    label: "Segundo apellido",
+                    name: "ap2",
+                    placeholder: "Segundo nombre"
                 }, void 0, false, {
                     fileName: "[project]/src/components/user/usuario.tsx",
                     lineNumber: 13,
+                    columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    label: "Tipo de documento",
+                    name: "td1",
+                    placeholder: "Tipo de documento"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/user/usuario.tsx",
+                    lineNumber: 14,
+                    columnNumber: 6
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                    label: "Numero de documento",
+                    name: "nd1",
+                    placeholder: "n° de documento"
+                }, void 0, false, {
+                    fileName: "[project]/src/components/user/usuario.tsx",
+                    lineNumber: 15,
                     columnNumber: 6
                 }, this)
             ]

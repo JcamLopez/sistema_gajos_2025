@@ -1,7 +1,13 @@
 /* [project]/src/components/user/user.module.css [app-client] (css) */
 .user-module__l8JgOW__card {
+  background-color: #d1dfc9;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
 }
 
 .user-module__l8JgOW__formGrid {
@@ -36,6 +42,9 @@
 
 .user-module__l8JgOW__formGrid h1 {
   grid-column: 1 / -1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 /*# sourceMappingURL=src_components_user_user_module_css_bad6b30c._.single.css.map*/

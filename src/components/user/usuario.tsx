@@ -6,11 +6,13 @@ function Usuario() {
 
     <Card className={estilos.card}>
       <form action="" className={estilos.formGrid}>
-        <h1>esta es mi Card</h1>
-     <Input label='primer nombre' name='n1' placeholder='primer nombre'/>
-     <Input label='segundo nombre' name='n2' placeholder='segundo nombre'/>
-     <Input label='tipo documento' name='n3' placeholder=''/>
-     <Input label='segundo nombre' name='n1' placeholder='segundo nombre'/>
+        <h1>resgistro</h1>
+     <Input label='Primer nombre' name='n1' placeholder='Primer nombre'/>
+     <Input label='Segundo nombre' name='n2' placeholder='Segundo nombre'/>
+     <Input label='Primer apellido' name='ap1' placeholder='Primer apellido'/>
+     <Input label='Segundo apellido' name='ap2' placeholder='Segundo nombre'/>
+     <Input label='Tipo de documento' name='td1' placeholder='Tipo de documento'/>
+     <Input label='Numero de documento' name='nd1' placeholder='n° de documento'/>
       </form>
       
     </Card>

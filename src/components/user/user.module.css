@@ -1,6 +1,12 @@
 .card{
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;        
+    background-color: rgb(209, 223, 201);
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .formGrid {
     display: grid;
@@ -37,5 +43,8 @@
 }
 
 .formGrid h1 {
+    display: flex;
     grid-column: 1/-1;
+    align-items: center;
+    justify-content: center;
 }

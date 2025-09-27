@@ -110,7 +110,9 @@ function Input({ label, name, type = 'text', placeholder = '', register, error }
 "[project]/src/components/login/login.module.css [app-rsc] (css module)", ((__turbopack_context__) => {
 
 __turbopack_context__.v({
+  "card": "login-module__5avBqG__card",
   "login": "login-module__5avBqG__login",
+  "logo": "login-module__5avBqG__logo",
 });
 }),
 "[project]/src/components/login/inicio.tsx [app-rsc] (ecmascript)", ((__turbopack_context__) => {
@@ -130,19 +132,29 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$login$2
 ;
 function Inicio() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$card$2f$card$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+        className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].card,
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                src: "/img/Logo_gajos_blanco.jpg",
+                alt: "Logo",
+                className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].logo
+            }, void 0, false, {
+                fileName: "[project]/src/components/login/inicio.tsx",
+                lineNumber: 10,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$login$2f$login$2e$module$2e$css__$5b$app$2d$rsc$5d$__$28$css__module$29$__["default"].login,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                     children: "iniciar sesion"
                 }, void 0, false, {
                     fileName: "[project]/src/components/login/inicio.tsx",
-                    lineNumber: 11,
+                    lineNumber: 12,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/login/inicio.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 8
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -151,16 +163,17 @@ function Inicio() {
                 placeholder: "ingresa tu usuario"
             }, void 0, false, {
                 fileName: "[project]/src/components/login/inicio.tsx",
-                lineNumber: 13,
+                lineNumber: 14,
                 columnNumber: 8
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$ui$2f$input$2f$campos$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 label: "contraseña",
                 name: "",
+                type: "password",
                 placeholder: "ingresa tu contraseña"
             }, void 0, false, {
                 fileName: "[project]/src/components/login/inicio.tsx",
-                lineNumber: 14,
+                lineNumber: 15,
                 columnNumber: 8
             }, this)
         ]
