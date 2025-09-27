@@ -6,13 +6,16 @@ import Select from '@/components/ui/select/selector'
 import { SelectOption } from '@/types/ui/select'
 import { useEffect, useState } from 'react'
 import { obtenerTrabajador } from '@/services/frontend/trabajadorServices'
+import {obtenerVehiculo} from '@/services/frontend/VehiculoServices'
 import { useForm } from 'react-hook-form';
 import { trabajadorSchema, trabajadorPayLoad } from '@/schemas/trabajadorSchema'
+import {AsignacionPayLoad, AsignacionSchema} from '@/schemas/trabajadorasignavehiculoSchema'
 import { zodResolver } from "@hookform/resolvers/zod";
 
 
 export default function Asignacion() {
   const [trabajador, setTrabajador] = useState<SelectOption[]>([]);
+  const [marca, setMarca] = useState<SelectOption[]>([]);
   useEffect(() => {
 
     obtenerTrabajador().then((dato) => {
@@ -22,7 +25,13 @@ export default function Asignacion() {
       }));
       setTrabajador(opciones)
     }); 
-
+obtenerVehiculo().then((dato) => {
+      const opciones = dato.map((data) => ({
+        label: data.MARCA_CARRO,
+        value: data.MARCA_CARRO,
+      }));
+      setMarca(opciones)
+    }); 
 
   }, [])
 
@@ -30,8 +39,8 @@ export default function Asignacion() {
     register,
     handleSubmit,
     formState: { errors, isSubmitting },
-  } = useForm<trabajadorPayLoad>({
-    resolver: zodResolver(trabajadorSchema),
+  } = useForm<AsignacionPayLoad>({
+    resolver: zodResolver(AsignacionSchema),
   });
 
 
@@ -48,10 +57,10 @@ export default function Asignacion() {
 
 
         <Select
-        label="VEHICULO"
-        name="vehiculo"
-        options={trabajador}
-        register={register('vehiculo')}
+        label="MARCA"
+        name="marca"
+        options={marca}
+        register={register('marca')}
 
 
 

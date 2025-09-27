@@ -1,7 +1,7 @@
 {
   "/api/consultarTrabajador/route": "app/api/consultarTrabajador/route.js",
+  "/api/consultarVehiculo/route": "app/api/consultarVehiculo/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js",
   "/vehiculo/asignacion/page": "app/vehiculo/asignacion/page.js",
   "/vehiculo/crear_vehiculo/page": "app/vehiculo/crear_vehiculo/page.js"
 }
