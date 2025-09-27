@@ -77,40 +77,22 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies RouteHandlerConfig<"/api/consultarTrabajador">
 }
 
-// Validate ../src/app/api/departamento/route.ts
+// Validate ../src/app/api/consultarVehiculo/route.ts
 {
-  const handler = {} as typeof import("../src/app/api/departamento/route.js")
-  handler satisfies RouteHandlerConfig<"/api/departamento">
-}
-
-// Validate ../src/app/api/genero/route.ts
-{
-  const handler = {} as typeof import("../src/app/api/genero/route.js")
-  handler satisfies RouteHandlerConfig<"/api/genero">
-}
-
-// Validate ../src/app/api/municipio/route.ts
-{
-  const handler = {} as typeof import("../src/app/api/municipio/route.js")
-  handler satisfies RouteHandlerConfig<"/api/municipio">
-}
-
-// Validate ../src/app/api/rol/route.ts
-{
-  const handler = {} as typeof import("../src/app/api/rol/route.js")
-  handler satisfies RouteHandlerConfig<"/api/rol">
-}
-
-// Validate ../src/app/api/tipo_documento/route.ts
-{
-  const handler = {} as typeof import("../src/app/api/tipo_documento/route.js")
-  handler satisfies RouteHandlerConfig<"/api/tipo_documento">
+  const handler = {} as typeof import("../src/app/api/consultarVehiculo/route.js")
+  handler satisfies RouteHandlerConfig<"/api/consultarVehiculo">
 }
 
 // Validate ../src/app/api/trabajador/route.ts
 {
   const handler = {} as typeof import("../src/app/api/trabajador/route.js")
   handler satisfies RouteHandlerConfig<"/api/trabajador">
+}
+
+// Validate ../src/app/api/vehiculo/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/vehiculo/route.js")
+  handler satisfies RouteHandlerConfig<"/api/vehiculo">
 }
 
 
