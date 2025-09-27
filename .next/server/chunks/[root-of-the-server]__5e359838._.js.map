@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/app/api/consultarTrabajador/route.ts"],"sourcesContent":["import { NextResponse } from 'next/server'\r\nimport { consultarTrabajador } from '@/services/backend/ConsultarTrabajadorServices';\r\n\r\nexport async function GET() {\r\n    try {\r\n        console.log(\"------------- LISTA DE TRABAJADORES -------------\")\r\n    } catch (error) {\r\n        console.error('Error en POST /trabajador', error);\r\n        return NextResponse.json(\r\n            { error: 'Error interno del servidor' },\r\n            { status: 500 }\r\n        );\r\n    }\r\n}"],"names":[],"mappings":";;;;AAAA;;AAGO,eAAe;IAClB,IAAI;QACA,QAAQ,GAAG,CAAC;IAChB,EAAE,OAAO,OAAO;QACZ,QAAQ,KAAK,CAAC,6BAA6B;QAC3C,OAAO,gJAAY,CAAC,IAAI,CACpB;YAAE,OAAO;QAA6B,GACtC;YAAE,QAAQ;QAAI;IAEtB;AACJ","debugId":null}}]
+}
