@@ -53,12 +53,6 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/auth/inicio">
 }
 
-// Validate ../src/app/auth/registro/page.tsx
-{
-  const handler = {} as typeof import("../src/app/auth/registro/page.js")
-  handler satisfies AppPageConfig<"/auth/registro">
-}
-
 // Validate ../src/app/auth/registro2/page.tsx
 {
   const handler = {} as typeof import("../src/app/auth/registro2/page.js")
@@ -69,6 +63,18 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("../src/app/page.js")
   handler satisfies AppPageConfig<"/">
+}
+
+// Validate ../src/app/vehiculo/asignacion/page.tsx
+{
+  const handler = {} as typeof import("../src/app/vehiculo/asignacion/page.js")
+  handler satisfies AppPageConfig<"/vehiculo/asignacion">
+}
+
+// Validate ../src/app/vehiculo/crear_vehiculo/page.tsx
+{
+  const handler = {} as typeof import("../src/app/vehiculo/crear_vehiculo/page.js")
+  handler satisfies AppPageConfig<"/vehiculo/crear_vehiculo">
 }
 
 // Validate ../src/app/api/departamento/route.ts

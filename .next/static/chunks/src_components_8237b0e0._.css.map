@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/components/ui/card/card.module.css"],"sourcesContent":[".card {\r\n    container-type: inline-size;\r\n    container-name: card;\r\n    border-radius: 1rem;\r\n    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);\r\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\r\n}"],"names":[],"mappings":"AAAA","debugId":null}},
+    {"offset": {"line": 9, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/components/ui/input/input.module.css"],"sourcesContent":[".formGroup {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 0.5rem;\r\n}\r\n\r\n.formGroup label {\r\n  font-weight: 600;\r\n}\r\n\r\n.formGroup input {\r\n  padding: 0.5rem;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;;AAMA;;;;AAIA","debugId":null}},
+    {"offset": {"line": 26, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/components/vehiculo/vehiculo.module.css"],"sourcesContent":[""],"names":[],"mappings":"","debugId":null}}]
+}

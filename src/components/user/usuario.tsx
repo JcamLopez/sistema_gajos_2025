@@ -3,10 +3,13 @@ import Input from '@/components/ui/input/campos'
 import estilos from './user.module.css'
 function Usuario() {
   return (
-
     <Card className={estilos.card}>
+      <div className={estilos.contenedor_fotos}>
+        <img src="/img/Logo_gajos.jpg" alt="Logo" className={estilos.logo} />
+      </div>
+       
       <form action="" className={estilos.formGrid}>
-        <h1>resgistro</h1>
+     <h1>REGISTRO</h1>
      <Input label='Primer nombre' name='n1' placeholder='Primer nombre'/>
      <Input label='Segundo nombre' name='n2' placeholder='Segundo nombre'/>
      <Input label='Primer apellido' name='ap1' placeholder='Primer apellido'/>
@@ -16,6 +19,7 @@ function Usuario() {
       </form>
       
     </Card>
+
   )
 }
 

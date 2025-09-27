@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/components/vehiculo/vehiculo.tsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function vehiculo() {\r\n  return (\r\n    <div>\r\n      <h1>conecte</h1>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGV","debugId":null}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///C:/sistema_gajos_2025/src/app/vehiculo/crear_vehiculo/page.tsx"],"sourcesContent":["import React from 'react'\r\nimport Vehiculo from '@/components/vehiculo/vehiculo'\r\nexport default function Page() {\r\n  return (\r\n    <div>\r\n      <h1>crear vehiculo</h1>\r\n      <Vehiculo/>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AACA;;;AACe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC,qJAAQ;;;;;;;;;;;AAGf","debugId":null}}]
+}
