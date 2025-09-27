@@ -1,12 +1,12 @@
 import { FieldError, UseFormRegisterReturn } from 'react-hook-form';
-type SelectOption = {
+export type SelectOption = {
   label: string;
   value: string | number;
 };
 
 export type SelectProps = {
   label?: string;
-  name: string;
+  name?: string;
   options: SelectOption[];
   onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   placeholder?: string;
