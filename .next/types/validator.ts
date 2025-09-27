@@ -77,6 +77,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/vehiculo/crear_vehiculo">
 }
 
+// Validate ../src/app/api/consultarTrabajador/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/consultarTrabajador/route.js")
+  handler satisfies RouteHandlerConfig<"/api/consultarTrabajador">
+}
+
 // Validate ../src/app/api/departamento/route.ts
 {
   const handler = {} as typeof import("../src/app/api/departamento/route.js")
@@ -105,6 +111,12 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
 {
   const handler = {} as typeof import("../src/app/api/tipo_documento/route.js")
   handler satisfies RouteHandlerConfig<"/api/tipo_documento">
+}
+
+// Validate ../src/app/api/trabajador/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/trabajador/route.js")
+  handler satisfies RouteHandlerConfig<"/api/trabajador">
 }
 
 

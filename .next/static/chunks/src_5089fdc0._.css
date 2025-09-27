@@ -1,0 +1,21 @@
+/* [project]/src/components/ui/select/selector.module.css [app-client] (css) */
+.selector-module__bpJDkG__formGroup {
+  flex-direction: column;
+  gap: .5rem;
+  display: flex;
+}
+
+.selector-module__bpJDkG__formGroup label {
+  font-weight: 600;
+}
+
+.selector-module__bpJDkG__formGroup select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: .7rem;
+}
+
+/* [project]/src/app/vehiculo/asignacion/asignacion.module.css [app-client] (css) */
+
+
+/*# sourceMappingURL=src_5089fdc0._.css.map*/
