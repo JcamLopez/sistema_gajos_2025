@@ -7,7 +7,7 @@ export async function GET() {
         const trabajador = await consultarTrabajador();
         return NextResponse.json(trabajador); 
     } catch (error) {
-        console.error('Error en POST /trabajador', error);
+        console.error('Error en GET /trabajador', error);
         return NextResponse.json(
             { error: 'Error interno del servidor' },
             { status: 500 }

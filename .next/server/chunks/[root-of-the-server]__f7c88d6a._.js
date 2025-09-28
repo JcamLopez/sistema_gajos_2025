@@ -154,12 +154,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b
 ;
 const connection = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getConnection();
 async function consultarVehiculo() {
-    const [rows] = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].query('SELECT ID_PLACA AS IP, MODELO AS M, MARCA_CARRO AS MC, ESTADO AS E FROM VEHICULO AS V ');
+    const [rows] = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].query('SELECT ID_VEHICULO AS IP, PLACA AS P, MODELO AS M, MARCA_CARRO AS MC, ESTADO AS E FROM VEHICULO AS V ');
     const vehiculo = rows.map((row)=>({
-            ID_PLACA: row.IP,
-            M: row.M,
-            MC: row.MC,
-            E: row.E
+            ID_VEHICULO: row.IP,
+            PLACA: row.P,
+            MODELO: row.M,
+            MARCA_CARRO: row.MC,
+            ESTADO: row.E
         }));
     return vehiculo;
 }

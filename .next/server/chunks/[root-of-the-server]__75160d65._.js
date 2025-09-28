@@ -154,7 +154,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b
 ;
 const connection = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getConnection();
 async function registroVehiculo(data) {
-    await connection.execute('INSERT INTO VEHICULO(MODELO, MARCA_CARRO, ESTADO) VALUES (?, ?, ?)', [
+    await connection.execute('INSERT INTO VEHICULO(PLACA, MODELO, MARCA_CARRO, ESTADO) VALUES (?, ?, ?, ?)', [
+        data.placa,
         data.modelo,
         data.marca_carro,
         1
@@ -172,6 +173,9 @@ __turbopack_context__.s([
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ = __turbopack_context__.i("[project]/node_modules/zod/v4/classic/external.js [app-route] (ecmascript) <export * as z>");
 ;
 const vehiculoSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
+    placa: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().regex(/^[A-Z]{1,3}\d{1,3}$/, {
+        message: 'La placa debe tener entre 1 y 3 letras seguidas de 1 a 3 dígitos.'
+    }),
     modelo: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
         message: "Introducir el modelo es obligatorio"
     }),
