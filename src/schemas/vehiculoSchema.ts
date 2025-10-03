@@ -5,7 +5,6 @@ export const vehiculoSchema = z.object({
 {message: "La placa debe tener 3 letras seguidas y 3 números seguidos (ej: ABC123)"}),
     modelo: z.string().min(1 , {message:"Debe ingresar el modelo del vehículo"}),
     marca_carro: z.string().min(1, {message:"Debe ingresar el modelo del vehículo"}),
-    estado: z.boolean
 })
 
 export type vehiculoPayLoad = z.infer<typeof vehiculoSchema>;
