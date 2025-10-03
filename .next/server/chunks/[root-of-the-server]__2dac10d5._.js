@@ -1,5 +1,5 @@
 module.exports = [
-"[project]/.next-internal/server/app/api/vehiculo/route/actions.js [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__, module, exports) => {
+"[project]/.next-internal/server/app/api/aceite/route/actions.js [app-rsc] (server actions loader, ecmascript)", ((__turbopack_context__, module, exports) => {
 
 }),
 "[externals]/next/dist/compiled/next-server/app-route-turbo.runtime.dev.js [external] (next/dist/compiled/next-server/app-route-turbo.runtime.dev.js, cjs)", ((__turbopack_context__, module, exports) => {
@@ -141,50 +141,49 @@ const db = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$mysql
     queueLimit: 0
 });
 }),
-"[project]/src/services/backend/vehiculoServices.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/services/backend/aceiteServices.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
 
 __turbopack_context__.s([
-    "registroVehiculo",
-    ()=>registroVehiculo
+    "registroAceite",
+    ()=>registroAceite
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/libs/db.ts [app-route] (ecmascript)");
 ;
 const connection = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getConnection();
-async function registroVehiculo(data) {
-    await connection.execute('INSERT INTO VEHICULO (ID_PLACA, MODELO, MARCA_CARRO, ESTADO) VALUES (?, ?, ?, ?)', [
-        data.id_placa,
-        data.modelo,
-        data.marca_carro,
-        1
+async function registroAceite(data) {
+    await connection.execute('INSERT INTO ACEITE (TIPO_ACEITE, FECHA, DESCRIPCION) VALUES (?, ?, ?)', [
+        data.tipo_aceite,
+        data.fecha,
+        data.descripcion
     ]);
 }
 __turbopack_async_result__();
 } catch(e) { __turbopack_async_result__(e); } }, true);}),
-"[project]/src/schemas/vehiculoSchema.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/schemas/aceiteSchema.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
-    "vehiculoSchema",
-    ()=>vehiculoSchema
+    "aceiteSchema",
+    ()=>aceiteSchema
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__ = __turbopack_context__.i("[project]/node_modules/zod/v4/classic/external.js [app-route] (ecmascript) <export * as z>");
 ;
-const vehiculoSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
-    id_placa: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().regex(/^[A-Za-z]{3}[0-9]{3}$/, {
-        message: "La placa debe tener 3 letras seguidas y 3 números seguidos (ej: ABC123)"
+const aceiteSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].object({
+    tipo_aceite: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
+        message: "Ingrese el tipo de aceite"
     }),
-    modelo: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
-        message: "Debe ingresar el modelo del vehículo"
+    fecha: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().regex(/^\d{4}-\d{2}-\d{2}$/, {
+        message: "La fecha debe tener el formato YYYY-MM-DD"
     }),
-    marca_carro: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
-        message: "Debe ingresar el modelo del vehículo"
+    descripcion: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
+        message: "Ingrese la descripción del aceite"
     })
 });
 }),
-"[project]/src/app/api/vehiculo/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
+"[project]/src/app/api/aceite/route.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, __turbopack_async_result__) => { try {
@@ -194,21 +193,21 @@ __turbopack_context__.s([
     ()=>POST
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/server.js [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$vehiculoServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/services/backend/vehiculoServices.ts [app-route] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$vehiculoSchema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/schemas/vehiculoSchema.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$aceiteServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/services/backend/aceiteServices.ts [app-route] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$aceiteSchema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/schemas/aceiteSchema.ts [app-route] (ecmascript)");
 var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
-    __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$vehiculoServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__
+    __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$aceiteServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__
 ]);
-[__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$vehiculoServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
+[__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$aceiteServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__] = __turbopack_async_dependencies__.then ? (await __turbopack_async_dependencies__)() : __turbopack_async_dependencies__;
 ;
 ;
 ;
 async function POST(req) {
     try {
         const body = await req.json();
-        console.log("------------- REGISTRO VEHICULO -------------");
+        console.log("------------- REGISTRO ACEITE -------------");
         console.log(body);
-        const parsed = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$vehiculoSchema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["vehiculoSchema"].safeParse(body);
+        const parsed = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$aceiteSchema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["aceiteSchema"].safeParse(body);
         if (!parsed.success) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
                 error: 'Error al registrar, verifique la información',
@@ -217,14 +216,14 @@ async function POST(req) {
                 status: 400
             });
         }
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$vehiculoServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["registroVehiculo"])(parsed.data);
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$backend$2f$aceiteServices$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["registroAceite"])(parsed.data);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
-            mensaje: "Vehiculo registrado con éxito."
+            mensaje: "Aceite registrado con éxito."
         }, {
             status: 201
         });
     } catch (error) {
-        console.error('Error en POST /vehiculo', error);
+        console.error('Error en POST /aceite', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: 'Error interno del servidor'
         }, {
@@ -236,4 +235,4 @@ __turbopack_async_result__();
 } catch(e) { __turbopack_async_result__(e); } }, false);}),
 ];
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__75160d65._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__2dac10d5._.js.map

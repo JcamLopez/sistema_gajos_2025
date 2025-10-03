@@ -71,10 +71,40 @@ type RouteHandlerConfig<Route extends AppRouteHandlerRoutes = AppRouteHandlerRou
   handler satisfies AppPageConfig<"/">
 }
 
+// Validate ../src/app/api/aceite/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/aceite/route.js")
+  handler satisfies RouteHandlerConfig<"/api/aceite">
+}
+
+// Validate ../src/app/api/combustible/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/combustible/route.js")
+  handler satisfies RouteHandlerConfig<"/api/combustible">
+}
+
+// Validate ../src/app/api/correccion/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/correccion/route.js")
+  handler satisfies RouteHandlerConfig<"/api/correccion">
+}
+
+// Validate ../src/app/api/rol/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/rol/route.js")
+  handler satisfies RouteHandlerConfig<"/api/rol">
+}
+
 // Validate ../src/app/api/seleccion/route.ts
 {
   const handler = {} as typeof import("../src/app/api/seleccion/route.js")
   handler satisfies RouteHandlerConfig<"/api/seleccion">
+}
+
+// Validate ../src/app/api/tipodocumento/route.ts
+{
+  const handler = {} as typeof import("../src/app/api/tipodocumento/route.js")
+  handler satisfies RouteHandlerConfig<"/api/tipodocumento">
 }
 
 // Validate ../src/app/api/trabajador/route.ts

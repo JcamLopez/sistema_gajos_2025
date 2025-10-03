@@ -1,3 +1,5 @@
 {
-  "/api/trabajador/route": "app/api/trabajador/route.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/correccion/route": "app/api/correccion/route.js",
+  "/api/vehiculo/route": "app/api/vehiculo/route.js"
 }
