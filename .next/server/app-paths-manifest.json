@@ -1,4 +1,3 @@
 {
-  "/api/consultarVehiculo/route": "app/api/consultarVehiculo/route.js",
-  "/api/vehiculo/route": "app/api/vehiculo/route.js"
+  "/api/trabajador/route": "app/api/trabajador/route.js"
 }

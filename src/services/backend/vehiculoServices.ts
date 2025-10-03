@@ -5,12 +5,12 @@ const connection = await db.getConnection();
 export async function registroVehiculo(data: vehiculoPayLoad) {
     
     await connection.execute(
-        'INSERT INTO VEHICULO(PLACA, MODELO, MARCA_CARRO, ESTADO) VALUES (?, ?, ?, ?)',
+        'INSERT INTO VEHICULO (ID_PLACA, MODELO, MARCA_CARRO, ESTADO) VALUES (?, ?, ?, ?)',
         [
-            data.placa,
-            data.modelo,
-            data.marca_carro,
-            1
+         data.id_placa,
+         data.modelo,
+         data.marca_carro,
+         1
         ]
     );
 }

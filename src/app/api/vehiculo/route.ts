@@ -5,7 +5,7 @@ import { vehiculoSchema } from '@/schemas/vehiculoSchema';
 export async function POST(req:Request) {
     try {
         const body = await req.json();
-        console.log("------------- VEHICULO REGISTRADO -------------")
+        console.log("------------- REGISTRO VEHICULO -------------")
         console.log(body)
         const parsed = vehiculoSchema.safeParse(body);
        if (!parsed.success) {

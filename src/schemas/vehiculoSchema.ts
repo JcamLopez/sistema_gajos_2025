@@ -1,9 +1,11 @@
 import {z} from 'zod';
 
 export const vehiculoSchema = z.object({
-    placa: z.string().regex(/^[A-Z]{1,3}\d{1,3}$/, {message: 'La placa debe tener entre 1 y 3 letras seguidas de 1 a 3 dígitos.'}),
-    modelo: z.string().min(1, {message: "Introducir el modelo es obligatorio"}),
-    marca_carro: z.string().min(1, {message: "Introducir la marca es obligatorio"}),
+    id_placa: z.string().regex(/^[A-Za-z]{3}[0-9]{3}$/, 
+{message: "La placa debe tener 3 letras seguidas y 3 números seguidos (ej: ABC123)"}),
+    modelo: z.string().min(1 , {message:"Debe ingresar el modelo del vehículo"}),
+    marca_carro: z.string().min(1, {message:"Debe ingresar el modelo del vehículo"}),
+    estado: z.boolean
 })
 
 export type vehiculoPayLoad = z.infer<typeof vehiculoSchema>;

@@ -1,8 +1,9 @@
 import {z} from 'zod';
 
 export const trabajadorSchema = z.object({
-    documento: z.string().min(1, {message: "El documento es obligatorio"}),
+    documento: z.string().min(1, {message: "El documento es obligatorio"}).max(10, {message: "El documento debe tener máximo 10 dígitos"}),
     id_tipo: z.int(),
+    id_rol: z.int(),
     n1: z.string().min(1, {message: "El primer nombre es obligatorio"}),
     n2: z.string().optional(),
     a1: z.string().min(1, {message: "El primer apellido es obligatorio"}),

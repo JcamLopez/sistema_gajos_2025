@@ -154,9 +154,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b
 ;
 const connection = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$libs$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getConnection();
 async function registroTrabajador(data) {
-    await connection.execute('INSERT INTO TRABAJADOR (DOCUMENTO, FK_ID_TIPO, N1, N2, AP1, AP2, ESTADO) VALUES (?, ?, ?, ?, ?, ?, ?)', [
+    await connection.execute('INSERT INTO TRABAJADOR (DOCUMENTO, ID_TIPO, ID_ROL, N1, N2, AP1, AP2, ESTADO) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', [
         data.documento,
         data.id_tipo,
+        data.id_rol,
         data.n1,
         data.n2,
         data.a1,
@@ -180,6 +181,7 @@ const trabajadorSchema = __TURBOPACK__imported__module__$5b$project$5d2f$node_mo
         message: "El documento es obligatorio"
     }),
     id_tipo: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].int(),
+    id_rol: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].int(),
     n1: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$external$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__$3c$export__$2a$__as__z$3e$__["z"].string().min(1, {
         message: "El primer nombre es obligatorio"
     }),
@@ -214,7 +216,7 @@ var __turbopack_async_dependencies__ = __turbopack_handle_async_dependencies__([
 async function POST(req) {
     try {
         const body = await req.json();
-        console.log("------------- REGISTRADO -------------");
+        console.log("------------- REGISTRO TRABAJADOR -------------");
         console.log(body);
         const parsed = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$schemas$2f$trabajadorSchema$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["trabajadorSchema"].safeParse(body);
         if (!parsed.success) {
@@ -232,7 +234,7 @@ async function POST(req) {
             status: 201
         });
     } catch (error) {
-        console.error('Error en POST /persona:', error);
+        console.error('Error en POST /trabajador', error);
         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
             error: 'Error interno del servidor'
         }, {

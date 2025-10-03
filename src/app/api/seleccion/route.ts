@@ -1,26 +1,26 @@
 import { NextResponse } from 'next/server'
-import { registroTrabajador } from '@/services/backend/trabajadorServices';
-import { trabajadorSchema } from '@/schemas/trabajadorSchema';
+import { registroSeleccion } from '@/services/backend/seleccionServices';
+import { seleccionSchema } from '@/schemas/seleccionSchema';
 
 export async function POST(req:Request) {
     try {
         const body = await req.json();
-        console.log("------------- REGISTRO TRABAJADOR -------------")
+        console.log("------------- REGISTRO SELECCION -------------")
         console.log(body)
-        const parsed = trabajadorSchema.safeParse(body);
+        const parsed = seleccionSchema.safeParse(body);
        if (!parsed.success) {
             return NextResponse.json(
                 { error: 'Error al registrar, verifique la información', detalles: parsed.error.format() },
                 { status: 400 }
             );
        }
-    registroTrabajador(parsed.data)
+    registroSeleccion(parsed.data)
         return NextResponse.json(
-            { mensaje: "Trabajador registrado con éxito." },
+            { mensaje: "Seleccion registrada con éxito." },
             { status: 201 }
         );
     } catch (error) {
-        console.error('Error en POST /trabajador', error);
+        console.error('Error en POST /seleccion', error);
         return NextResponse.json(
             { error: 'Error interno del servidor' },
             { status: 500 }
